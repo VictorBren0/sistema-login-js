@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sistema de Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body class="d-flex justify-content-center align-items-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h2>Registro de Usuário</h2>
+                        <form id="frmCadastro">
+                            <div class="form-group">
+                                <label for="txtNome">Nome de Usuário:</label>
+                                <input type="text" class="form-control" id="txtNome" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="txtSenha">Senha:</label>
+                                <input type="password" class="form-control" id="txtSenha" required>
+                            </div>
+                            <input type="submit" class="btn btn-primary" value="Registrar">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h2>Login</h2>
+                        <div class="form-group">
+                            <label for="txtLoginNome">Nome de Usuário:</label>
+                            <input type="text" class="form-control" id="txtLoginNome">
+                        </div>
+                        <div class="form-group">
+                            <label for="txtLoginSenha">Senha:</label>
+                            <input type="password" class="form-control" id="txtLoginSenha">
+                        </div>
+                        <button id="btnLogin" class="btn btn-primary">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-5">
+            <div id="mensagem" class="alert alert-primary text-center" role="alert"></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
